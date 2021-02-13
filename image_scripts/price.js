@@ -9,7 +9,7 @@ const UPCOLOR = '#16c784';
 const DOWNCOLOR = '#ea3943';
 const NOCHANGECOLOR = '#000000';
 
-exports.create = async function(fname) {
+exports.create = async function(app_dir, fname) {
 
     const height = 512;
     const width = 512;
@@ -29,10 +29,10 @@ exports.create = async function(fname) {
     const price = (await axios.get('https://node.somenano.com/proxy?action=price')).data;
     // console.log(price);
 
-    let bg = await loadImage('./public/images/stock/price-bg.svg');
+    let bg = await loadImage(app_dir + './public/images/stock/price-bg.svg');
     let rocket = [
-        await loadImage('./public/images/stock/rocket-1.png'),
-        await loadImage('./public/images/stock/rocket-2.png')
+        await loadImage(app_dir + './public/images/stock/rocket-1.png'),
+        await loadImage(app_dir + './public/images/stock/rocket-2.png')
     ];
 
     // Rocket
