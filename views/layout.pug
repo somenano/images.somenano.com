@@ -1,0 +1,46 @@
+doctype html
+html(lang="en")
+  head
+    title= title
+
+    meta(charset="utf-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    meta(name="nano" content="nano_1somenanerzdzdbyr4y6x996qbo764ifxk8beuhphydmwn1agpzkwquqqick")
+
+    link(rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png")
+    link(rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png")
+    link(rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png")
+    link(rel="manifest" href="/site.webmanifest")
+
+    link(href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous")
+    link(rel='stylesheet', href='/stylesheets/style.css')
+  
+  body
+    div(class="container")
+
+      div(class="jumbotron py-3")
+        div(class="d-flex")
+          p
+            a(href="/")
+              img(src="https://somenano.com/images/somenano.png" class="site-logo")
+          p
+            div
+              h1(class="display-4")
+                a(href="/" class="text-decoration-none text-dark") SomeNano Images
+              br
+              p(class="lead") Shareable, interesting, and informative images about Nano!
+              br
+        hr(class="my-4")
+        p
+          | This site hosts various images that are interesting and informativev about Nano. Best way to reach me is via&nbsp;
+          a(href="mailto:jason@somenano.com") email
+          | &nbsp;(
+          a(href="https://somenano.com/publickey.jason@somenano.com.asc") PGP
+          | ) or via Twitter&nbsp;
+          a(href="https://twitter.com/SomeNanoTweets") @SomeNanoTweets
+          | .
+
+      block content
+
+    script(src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous")
+    script(src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous")

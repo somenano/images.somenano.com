@@ -1,0 +1,29 @@
+extends layout
+
+block content
+
+  div(id="content")
+
+    div(class="row")
+      div(class="col-lg-4 offset-lg-4 col-md-6 offset-md-3")
+        h2(class="text-center") Navigation
+        div(class="list-group")
+            a(href="#live-gifs" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center") Live Gifs
+              span(id="live-gifs-count" class="badge badge-primary badge-pill bg-primary")
+
+    div(class="row")
+      
+      div(class="d-flex p-2")
+        h2(id="live-gifs") Live Gifs
+      
+      div(class="d-flex p-2 flex-wrap")
+        div(class="p-2")
+          div(class="card card-live-gifs" style="width: 18rem;")
+            a(href="/price.gif" class="text-center")
+              img(src="/price.gif" class="card-img-top custom-card-img-top" alt="price.gif")
+            div(class="card-body")
+              h5(class="card-title") Price
+              p(class="card-text") Live Nano price data. The angle of the rocket is based on the 7 day price change.
+
+  script.
+    document.getElementById('live-gifs-count').innerText = document.querySelectorAll('.card-live-gifs').length;

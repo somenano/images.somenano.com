@@ -1,0 +1,11 @@
+.site-logo {
+    object-fit:cover !important;
+    height:128px !important;
+    width:128px !important;
+}
+
+.custom-card-img-top {
+    object-fit:cover !important;
+    height:256px !important;
+    width:256px !important;
+}
