@@ -39,7 +39,7 @@ const refresh_images = async function() {
   if (verbose == true) console.log('Refreshing images...');
   
   /* /price.gif */
-  await require('../image_scripts/price.js').create('./public/price.gif');
+  await require('../image_scripts/price.js').create(process.env.APP_DIR + './public/price.gif');
 
   if (verbose == true) console.log('Done refreshing images...');
 }
