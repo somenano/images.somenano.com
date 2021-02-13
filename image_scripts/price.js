@@ -29,10 +29,10 @@ exports.create = async function(app_dir, fname) {
     const price = (await axios.get('https://node.somenano.com/proxy?action=price')).data;
     // console.log(price);
 
-    let bg = await loadImage(app_dir + './public/images/stock/price-bg.svg');
+    let bg = await loadImage(app_dir + 'public/images/stock/price-bg.png');
     let rocket = [
-        await loadImage(app_dir + './public/images/stock/rocket-1.png'),
-        await loadImage(app_dir + './public/images/stock/rocket-2.png')
+        await loadImage(app_dir + 'public/images/stock/rocket-1.png'),
+        await loadImage(app_dir + 'public/images/stock/rocket-2.png')
     ];
 
     // Rocket
